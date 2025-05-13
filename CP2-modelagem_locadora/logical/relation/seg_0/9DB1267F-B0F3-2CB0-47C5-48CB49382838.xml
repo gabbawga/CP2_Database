@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRODUZ" directorySegmentName="seg_0" id="9DB1267F-B0F3-2CB0-47C5-48CB49382838">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:42:11 UTC</createdTime>
+<comment><![CDATA[Representa a relação entre estúdios e os filmes que eles produziram. Um estúdio pode produzir vários filmes e um filme pode ser coproduzido por vários estúdios.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4A9DDB9E-8A83-D343-5C3B-807D9257FD6B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

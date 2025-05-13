@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALUGA" directorySegmentName="seg_0" id="D66D6BA6-4F92-7250-21BC-8D62D526E785">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:09:34 UTC</createdTime>
+<comment><![CDATA[Entidade associativa que representa o aluguel de um exemplar por um sócio. Registra data de retirada, devolução e valor do aluguel.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F9C613D1-46BA-BD26-8A97-28293C854448</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A1B05C63-6FDD-7975-FC92-533D933CCFCF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="DT_RETIRADA" id="574F394F-1886-5919-0613-D2C77BDEEAFC">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:40:09 UTC</createdTime>
+<comment><![CDATA[Data em que o exemplar foi retirado
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="DT_DEVOLUCAO" id="3C6FE7F6-8B5D-ACD2-5828-34C8B2044D88">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:40:41 UTC</createdTime>
+<comment><![CDATA[Data prevista para devolução.
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="VALOR" id="25476ECF-E654-62BA-5A01-E40F686FC3C2">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:41:12 UTC</createdTime>
+<comment><![CDATA[Valor cobrado pelo aluguel.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

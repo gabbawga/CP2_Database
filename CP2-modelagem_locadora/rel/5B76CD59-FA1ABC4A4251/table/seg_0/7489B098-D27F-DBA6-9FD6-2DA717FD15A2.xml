@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7489B098-D27F-DBA6-9FD6-2DA717FD15A2" name="Artista">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Representa pessoas que participaram da produção de filmes, como atores e diretores. Um artista pode atuar ou dirigir múltiplos filmes.
+
+]]></comment>
+<generatorID>E457EE3E-1AB3-FAB4-7439-2D1ED824F1F2</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ARTISTA" id="E2FD5F9D-9019-AB0C-7BE3-5EAFD849C256">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do artista]]></commentInRDBMS>
+<generatorID>BFDB95D2-97DF-88D5-AE63-B390A04A2046</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="03DC8565-F211-FC4F-732F-AE78EDDC7320">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do artista]]></commentInRDBMS>
+<generatorID>7DB07830-4F88-899A-F06D-4961801145CD</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_NASC" id="E0184C8F-6FD3-B3E2-5842-5DB11692B9AF">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do artista
+]]></commentInRDBMS>
+<generatorID>0D7FBA1B-D5E5-784C-F533-1B4BE445DD78</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NACIONALIDADE" id="9626B3D0-3A10-0580-E62B-B0FF51C12D7E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pais de origem]]></commentInRDBMS>
+<generatorID>A8F8493F-3E5D-7888-0B9E-47067BF70300</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6228E10E-F200-845D-7638-A9EC3E995795" name="Artista_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>10585D69-C56A-277C-EB7E-EAB3F40827D2</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2FD5F9D-9019-AB0C-7BE3-5EAFD849C256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

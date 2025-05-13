@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ATUA" directorySegmentName="seg_0" id="A99B5024-D7CD-E801-79B7-DC74D14149F1">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:39:47 UTC</createdTime>
+<comment><![CDATA[Representa a atuação de um artista em um ou mais filmes. Um filme pode ter múltiplos artistas atuando.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E457EE3E-1AB3-FAB4-7439-2D1ED824F1F2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

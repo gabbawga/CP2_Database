@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B83B0864-4976-CA35-E4EE-C02C4CECA1C4" name="SOCIO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Representa os clientes cadastrados na locadora que podem alugar filmes. Contém informações pessoais e de contato.]]></comment>
+<generatorID>F9C613D1-46BA-BD26-8A97-28293C854448</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SOCIO" id="7BA65247-D158-2466-2579-87609C016BA6">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do exemplar.
+]]></commentInRDBMS>
+<generatorID>8DCFEFC9-8142-D32D-8ADD-509F24727E71</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="4FC6CBE1-E6E0-20D1-65F1-E30AE7CBB180">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do sócio.
+]]></commentInRDBMS>
+<generatorID>86D37F30-1BB8-C8CA-8516-384D02440E45</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="243C8620-56C5-5079-577F-9C341650BD0F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do sócio.
+]]></commentInRDBMS>
+<generatorID>9DF7628C-8A14-1589-E92A-FE4D1189BEC2</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="CB9C17B8-EB32-5457-3751-75EC435874CA">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF com formatação (000.000.000-00).
+]]></commentInRDBMS>
+<generatorID>2D376FCD-F654-B934-F48D-4FEC6C3E1281</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D7C8B5B-10F7-D809-6888-590567E9EA87" name="SOCIO_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>81AFCAB8-B873-0BC9-EDE9-F34C31429CF9</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BA65247-D158-2466-2579-87609C016BA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

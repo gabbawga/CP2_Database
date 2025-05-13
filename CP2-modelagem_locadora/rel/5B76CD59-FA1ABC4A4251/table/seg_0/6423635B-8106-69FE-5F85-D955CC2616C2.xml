@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6423635B-8106-69FE-5F85-D955CC2616C2" name="EXEMPLAR">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Representa uma cópia física de um filme disponível na locadora, como um DVD ou Blu-Ray. Cada exemplar pertence a um único filme.]]></comment>
+<generatorID>A1B05C63-6FDD-7975-FC92-533D933CCFCF</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EXEMPLAR" id="B78D6EBE-1617-2E1E-EFE4-BD4F2FF94601">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do exemplar.
+]]></commentInRDBMS>
+<generatorID>993EFF4C-3522-CFDC-2CA4-CD3B8C258B2E</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_FILME" id="953756CA-2FE2-10A2-C658-DDCD1B9EE774">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 13:31:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico do filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4446CDE4-BF85-1570-4834-E2EB053AFB6E" referredColumn="2C6F7BD4-E7D7-26D4-016E-D851BFAABC74"/>
+</associations>
+</Column>
+<Column name="TIPO_MIDIA" id="35165F38-2234-38ED-31C8-A25914488FE0">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de mídia: 'DVD' ou 'Blu-Ray'.
+]]></commentInRDBMS>
+<generatorID>5C97574B-942F-F6BD-6392-AB6AA8FB6297</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<constraintName>CHK_EXEMPLAR_TIPO_MIDIA</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Blu-Ray" description=""/>
+<valueDef value="DVD" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SITUACAO" id="B83B00C5-C5C6-1EDB-CACA-1137D18B3E73">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa situação atual (ex: Disponível, Alugado).
+]]></commentInRDBMS>
+<generatorID>BADC55CC-C526-A99C-9BC9-455601E8DA2A</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_BARRAS" id="F9309C35-82CD-C214-0B13-928FE3625AF0">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código físico do exemplar.
+]]></commentInRDBMS>
+<generatorID>C6F96E75-7831-3E75-8EF2-A57A190E336F</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B81D3F27-29E7-9A7F-1985-73911BF1405E" name="EXEMPLAR_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>EB14E015-8D18-5439-5BC0-D1AED68F31D0</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B78D6EBE-1617-2E1E-EFE4-BD4F2FF94601"/>
+<colUsage columnID="953756CA-2FE2-10A2-C658-DDCD1B9EE774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DDF199F-E714-A82C-9C2B-BCC78366591E" name="EXEMPLAR_FILME_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>AD400D66-A166-3642-B86E-0B0BAADF01D0</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="953756CA-2FE2-10A2-C658-DDCD1B9EE774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

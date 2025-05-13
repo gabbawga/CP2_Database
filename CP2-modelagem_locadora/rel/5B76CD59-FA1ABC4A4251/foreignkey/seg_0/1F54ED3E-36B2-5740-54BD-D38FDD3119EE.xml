@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F54ED3E-36B2-5740-54BD-D38FDD3119EE" containerWithKeyObject="8757DDFD-DDA2-4E92-F27A-4E4C1636A7F2" localFKIndex="6C652512-0305-89D8-7A8A-9E5885F219C1" name="ALUGA_EXEMPLAR_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>D66D6BA6-4F92-7250-21BC-8D62D526E785</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<referredTableLongName>EXEMPLAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6423635B-8106-69FE-5F85-D955CC2616C2</referredTableID>
+<keyObject>B81D3F27-29E7-9A7F-1985-73911BF1405E</keyObject>
+<referredKeyID>B81D3F27-29E7-9A7F-1985-73911BF1405E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EXEMPLAR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97CCD794-6666-B007-1C2F-4349A80B9C85" name="AVALIA">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Entidade associativa que registra a avaliação de um filme feita por um sócio, com base em uma pontuação atribuída.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SOCIO" id="F75C428A-A4DC-4807-FA9B-5F894ED1CB6A">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Data em que o exemplar foi retirado
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de socio]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD9C085C-E9B7-1DA9-F87B-F89D7DC30134" referredColumn="7BA65247-D158-2466-2579-87609C016BA6"/>
+</associations>
+</Column>
+<Column name="ID_FILME" id="5A7BCAA6-4631-D0B4-38F2-FE8FEE74721D">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 13:31:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de socio]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14762C17-E670-74E4-7A4B-D044E75EF1CC" referredColumn="2C6F7BD4-E7D7-26D4-016E-D851BFAABC74"/>
+</associations>
+</Column>
+<Column name="PONTUACAO" id="B3DBC552-422B-A2F5-F7DB-86D2B80B281F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Nota atribuída ao filme (ex: 1 a 5)]]></comment>
+<generatorID>039DF26E-7BFE-E5DC-191B-C9F3588C0004</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56809996-BC9C-2134-D6A5-586083F3BCF1" name="AVALIA_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F75C428A-A4DC-4807-FA9B-5F894ED1CB6A"/>
+<colUsage columnID="5A7BCAA6-4631-D0B4-38F2-FE8FEE74721D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD575DB5-8217-CDCA-9924-AED2732A9011" name="AVALIA_SOCIO_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>E512F13C-0E3E-A554-B2A5-84816D7FCF90</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F75C428A-A4DC-4807-FA9B-5F894ED1CB6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4F110EC-FF3A-21EE-989C-4FB4C4E0BA0C" name="AVALIA_FILME_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>E512F13C-0E3E-A554-B2A5-84816D7FCF90</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A7BCAA6-4631-D0B4-38F2-FE8FEE74721D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

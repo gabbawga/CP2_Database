@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="AVALIA" directorySegmentName="seg_0" id="E512F13C-0E3E-A554-B2A5-84816D7FCF90">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:10:54 UTC</createdTime>
+<comment><![CDATA[Entidade associativa que registra a avaliação de um filme feita por um sócio, com base em uma pontuação atribuída.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F9C613D1-46BA-BD26-8A97-28293C854448</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="PONTUACAO" id="039DF26E-7BFE-E5DC-191B-C9F3588C0004">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:45:35 UTC</createdTime>
+<comment><![CDATA[Nota atribuída ao filme (ex: 1 a 5)]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

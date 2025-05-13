@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A" name="FILME">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 00:09:02 UTC</createdTime>
+<comment><![CDATA[Armazena informações sobre os filmes disponíveis para locação, incluindo título, duração, idioma e ano de lançamento.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FILME" id="0065F6BC-E8EF-933F-8F9D-169BDDF732B7">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do filme
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TITULO" id="0BB980F6-421C-43FC-BBDB-6D0CA8F6639E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:24:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título do filme
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DURACAO" id="691EC9E5-CCB9-AA5E-1D78-8E68B79BE43E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:25:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Duração em minutos
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ANO_LANCAMENTO" id="8076259F-47EC-8B5E-8F55-3E2675F9D8D9">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:26:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ano de lancamento do filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

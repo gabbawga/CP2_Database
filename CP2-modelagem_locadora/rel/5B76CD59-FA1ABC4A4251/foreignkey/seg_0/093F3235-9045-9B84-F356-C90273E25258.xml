@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="093F3235-9045-9B84-F356-C90273E25258" containerWithKeyObject="8757DDFD-DDA2-4E92-F27A-4E4C1636A7F2" localFKIndex="65F76252-BEF8-5597-8AFD-09605FAB5CF5" name="ALUGA_SOCIO_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>D66D6BA6-4F92-7250-21BC-8D62D526E785</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<referredTableLongName>SOCIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B83B0864-4976-CA35-E4EE-C02C4CECA1C4</referredTableID>
+<keyObject>2D7C8B5B-10F7-D809-6888-590567E9EA87</keyObject>
+<referredKeyID>2D7C8B5B-10F7-D809-6888-590567E9EA87</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EXEMPLAR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

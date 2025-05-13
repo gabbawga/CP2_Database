@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF259B63-16E8-C092-7CA0-6AB51F498B1B" name="ESTUDIO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Representa os estúdios responsáveis pela produção dos filmes. Um filme pode ter sido produzido por um ou mais estúdios.
+
+]]></comment>
+<generatorID>4A9DDB9E-8A83-D343-5C3B-807D9257FD6B</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTUDIO" id="56C8E9CD-C8BB-5B1F-B8ED-7C826EFDF114">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do estúdio.
+]]></commentInRDBMS>
+<generatorID>9A331830-08FF-F1E6-B046-FE647EF5A2FF</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="09465457-3713-C42C-28D1-781AB9BDB3CB">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do estúdio
+]]></commentInRDBMS>
+<generatorID>88BCE8E2-F43E-E993-AF27-FFB753650C52</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO_FUNDACAO" id="7F48BEDE-7B00-8E46-AC01-E38010B2050B">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ano de fundacao do estudio]]></commentInRDBMS>
+<generatorID>11D44BCD-FAA3-233D-B08C-BFD40E3DFD6A</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC86C261-3707-6D25-3E35-7A3D3A253C1B" name="ESTUDIO_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>ED07E7BC-FEDB-F5E3-1AF3-ED508D2BDDBB</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56C8E9CD-C8BB-5B1F-B8ED-7C826EFDF114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

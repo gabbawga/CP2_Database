@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIRIGE" directorySegmentName="seg_0" id="2F03BED1-E2E4-D2B6-3E20-88A72A26E4BC">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:40:21 UTC</createdTime>
+<comment><![CDATA[Indica que um artista dirigiu um ou mais filmes. Um filme pode ter sido dirigido por um ou mais artistas.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E457EE3E-1AB3-FAB4-7439-2D1ED824F1F2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="564B267C-F5AD-435F-1031-F31AFFA35037" name="CLASSIFICA">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Indica os gêneros atribuídos a um filme. Um filme pode pertencer a vários gêneros, e um gênero pode estar associado a vários filmes.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GENERO" id="1ABC91EB-B70E-A2DA-54AC-DDD8F6B3B4B2">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40401B88-AA2E-37C6-390D-399C29A7A784" referredColumn="EFA1C7AC-307D-BCBB-7BF0-F0727F43FB97"/>
+</associations>
+</Column>
+<Column name="ID_FILME" id="AF3EF035-0735-ED60-E4DE-BD441F42F2C3">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 13:31:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F946898-FB8E-56FE-DA6C-63C6310FFD34" referredColumn="2C6F7BD4-E7D7-26D4-016E-D851BFAABC74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F1BC8FA-E3F3-4CA5-79F7-17BAADF8D0A9" name="CLASSIFICA_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ABC91EB-B70E-A2DA-54AC-DDD8F6B3B4B2"/>
+<colUsage columnID="AF3EF035-0735-ED60-E4DE-BD441F42F2C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76226C3D-B811-F78A-4297-6C692164BCDF" name="CLASSIFICA_GENERO_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>183CE6F2-F106-B186-D7F6-876B4BBADC2C</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ABC91EB-B70E-A2DA-54AC-DDD8F6B3B4B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="236813E5-AECD-014A-C9F1-FA2C4197C4BE" name="CLASSIFICA_FILME_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>183CE6F2-F106-B186-D7F6-876B4BBADC2C</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF3EF035-0735-ED60-E4DE-BD441F42F2C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

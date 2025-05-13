@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CC116C9-C2B4-7BAF-EECF-D2DE4F1DD035" name="PRODUZ">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Representa a relação entre estúdios e os filmes que eles produziram. Um estúdio pode produzir vários filmes e um filme pode ser coproduzido por vários estúdios.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTUDIO" id="087B988F-8350-6134-155C-DDAA522BFEA8">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Identificador unico de estudio]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de estudio]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA7C35A4-07A6-3EE9-D85D-53EEB0599A75" referredColumn="56C8E9CD-C8BB-5B1F-B8ED-7C826EFDF114"/>
+</associations>
+</Column>
+<Column name="ID_FILME" id="04A0CB59-2562-0BF6-681D-0A7A0FE0D0F0">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 13:31:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A49CD9E4-3B70-18E3-C9F7-D1038993CA3A" referredColumn="2C6F7BD4-E7D7-26D4-016E-D851BFAABC74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31EB077C-E720-D238-7744-12EFF24DA6D0" name="PRODUZ_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="087B988F-8350-6134-155C-DDAA522BFEA8"/>
+<colUsage columnID="04A0CB59-2562-0BF6-681D-0A7A0FE0D0F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="092C9DD0-0F39-4C84-B9AC-48F6C62933CA" name="PRODUZ_ESTUDIO_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>9DB1267F-B0F3-2CB0-47C5-48CB49382838</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="087B988F-8350-6134-155C-DDAA522BFEA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA22A622-EE13-122A-DFBA-891D37A32C3C" name="PRODUZ_FILME_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>9DB1267F-B0F3-2CB0-47C5-48CB49382838</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04A0CB59-2562-0BF6-681D-0A7A0FE0D0F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

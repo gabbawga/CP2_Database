@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="23C62D61-469D-CEFA-AF85-7478D3F3084D">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-07 22:49:42 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

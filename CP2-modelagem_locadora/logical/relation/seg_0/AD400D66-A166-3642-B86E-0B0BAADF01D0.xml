@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTEM" directorySegmentName="seg_0" id="AD400D66-A166-3642-B86E-0B0BAADF01D0">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 01:48:35 UTC</createdTime>
+<comment><![CDATA[Indica que um exemplar físico (como um DVD ou Blu-Ray) pertence a um único filme. Um filme pode ter vários exemplares.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AFCA1448-01C2-063A-D1B4-2CB11FFE2F7A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A1B05C63-6FDD-7975-FC92-533D933CCFCF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

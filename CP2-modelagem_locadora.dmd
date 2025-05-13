@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CP2-modelagem_locadora" id="C3A0203E-542A-05E2-0EF0-C0521C212911" version="3.5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-07 22:49:42 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C3A0203E-542A-05E2-0EF0-C0521C212911</designId>
+</OSDM_Design>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9C613D1-46BA-BD26-8A97-28293C854448" name="SOCIO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 00:08:33 UTC</createdTime>
+<comment><![CDATA[Representa os clientes cadastrados na locadora que podem alugar filmes. Contém informações pessoais e de contato.]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_SOCIO" id="8DCFEFC9-8142-D32D-8ADD-509F24727E71">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:14:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do exemplar.
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="86D37F30-1BB8-C8CA-8516-384D02440E45">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:17:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do sócio.
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="9DF7628C-8A14-1589-E92A-FE4D1189BEC2">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:18:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail do sócio.
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPF" id="2D376FCD-F654-B934-F48D-4FEC6C3E1281">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:18:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF com formatação (000.000.000-00).
+]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81AFCAB8-B873-0BC9-EDE9-F34C31429CF9" name="SOCIO PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:32:46 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5B76CD59-6EDD-218D-F3B2-FA1ABC4A4251" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DCFEFC9-8142-D32D-8ADD-509F24727E71</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

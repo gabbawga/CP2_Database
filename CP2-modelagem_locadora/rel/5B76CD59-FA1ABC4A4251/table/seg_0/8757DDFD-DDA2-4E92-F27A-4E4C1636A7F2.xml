@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8757DDFD-DDA2-4E92-F27A-4E4C1636A7F2" name="ALUGA">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Entidade associativa que representa o aluguel de um exemplar por um sócio. Registra data de retirada, devolução e valor do aluguel.
+
+]]></comment>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SOCIO" id="3A334743-AAD4-93FE-9975-1C7D00DF2EAF">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Identificador unico de socio ]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de socio ]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="093F3235-9045-9B84-F356-C90273E25258" referredColumn="7BA65247-D158-2466-2579-87609C016BA6"/>
+</associations>
+</Column>
+<Column name="ID_EXEMPLAR" id="7BDD3CEC-3360-7DD8-69FD-921CC4F4EECE">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Identificador unico de exemplar]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de exemplar]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F54ED3E-36B2-5740-54BD-D38FDD3119EE" referredColumn="B78D6EBE-1617-2E1E-EFE4-BD4F2FF94601"/>
+</associations>
+</Column>
+<Column name="ID_FILME" id="E7F2763B-5608-1382-D228-EE1F826769ED">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 13:39:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de filme]]></commentInRDBMS>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F54ED3E-36B2-5740-54BD-D38FDD3119EE" referredColumn="953756CA-2FE2-10A2-C658-DDCD1B9EE774"/>
+</associations>
+</Column>
+<Column name="DT_RETIRADA" id="4E397F45-FF96-9783-D441-F37D5E2CFEB6">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Data em que o exemplar foi retirado
+]]></comment>
+<generatorID>574F394F-1886-5919-0613-D2C77BDEEAFC</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="DT_DEVOLUCAO" id="403F6997-A7D7-15D0-E9B3-04728AE9653B">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Data prevista para devolução.
+]]></comment>
+<generatorID>3C6FE7F6-8B5D-ACD2-5828-34C8B2044D88</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="VALOR" id="D4C5DF76-1C18-01A2-4246-5CA37B0A67F1">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<comment><![CDATA[Valor cobrado pelo aluguel.
+
+]]></comment>
+<generatorID>25476ECF-E654-62BA-5A01-E40F686FC3C2</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2086517-FC9F-497C-08A2-5337EBD93B65" name="ALUGA_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A334743-AAD4-93FE-9975-1C7D00DF2EAF"/>
+<colUsage columnID="7BDD3CEC-3360-7DD8-69FD-921CC4F4EECE"/>
+<colUsage columnID="E7F2763B-5608-1382-D228-EE1F826769ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65F76252-BEF8-5597-8AFD-09605FAB5CF5" name="ALUGA_SOCIO_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>D66D6BA6-4F92-7250-21BC-8D62D526E785</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A334743-AAD4-93FE-9975-1C7D00DF2EAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C652512-0305-89D8-7A8A-9E5885F219C1" name="ALUGA_EXEMPLAR_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-08 02:47:45 UTC</createdTime>
+<generatorID>D66D6BA6-4F92-7250-21BC-8D62D526E785</generatorID>
+<ownerDesignName>CP2-modelagem_locadora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BDD3CEC-3360-7DD8-69FD-921CC4F4EECE"/>
+<colUsage columnID="E7F2763B-5608-1382-D228-EE1F826769ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
